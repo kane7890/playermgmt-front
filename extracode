@@ -1,0 +1,49 @@
+Provider store={store}>
+    <Router>
+      <App />
+    </Router>
+  </Provider>,
+  document.getElementById('root'));
+  <div>
+    <label>
+      Player Position
+            </label>
+    <select id="position" name="position" type="position" onChange={this.handlePosition}>
+      <option>Forward</option>
+      <option>Defenseman</option>
+      <option>Goaltender</option>
+    </select>
+
+  </div>
+
+
+  {
+    this.props.players.map (player=> <Player player={player}/>)
+     }
+     &&
+         this.props.players.map (player=><Player player={player}/>)
+
+
+         --
+
+         <div>
+           { (this.props.players)
+
+
+           }
+
+          </div>
+   )
+
+           <PlayerInput />
+           <Players />
+
+
+           --
+
+           createStore(
+               rootReducer,
+               window.__REDUX_DEVTOOLS_EXTENSION__ &&
+                 window.__REDUX_DEVTOOLS_EXTENSION__(),
+               applyMiddleware(thunk)
+             );

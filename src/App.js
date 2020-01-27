@@ -1,11 +1,30 @@
-import React from 'react';
+import React, {Component} from 'react';
+import PlayersContainer from './containers/PlayersContainer.js';
+import CoachesContainer from './containers/CoachesContainer.js';
 import logo from './logo.svg';
-import './App.css';
+import {Route, Switch} from 'react-router-dom'
+import NavBar from './components/NavBar'
+/*
+import './App.css' from './';
+*/
+class App extends Component {
 
-function App() {
+
+    constructor() {
+      super();
+
+      this.state = {};
+  }
+
+
+render() {
+
   return (
     <div className="App">
+  {/*}      <NavBar />
+
       <header className="App-header">
+
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -16,11 +35,27 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+      Learn React
         </a>
+
       </header>
+
+
+
+
+
+      <Route exact path='/players/new' component={PlayersContainer} />
+      */}
+
+      <PlayersContainer />
+
+      <CoachesContainer />
+
+
+
     </div>
-  );
+    );
+  }
 }
 
 export default App;
