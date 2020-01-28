@@ -37,7 +37,7 @@ class PlayerInput extends Component {
       /*
       console.log (user)
       */
-      debugger;
+      
       this.props.addPlayer(player)
       event=""
       this.setState({name: ''})
