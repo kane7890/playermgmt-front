@@ -11,7 +11,7 @@ class Coach extends Component {
       <div>
         Coach
         <li>
-          {coach.fname} - {coach.lname} -- {coach.position}
+          {coach.firstname} - {coach.lastname} -- {coach.position}
             {/*
           <button onClick={()=>this.props.deleteRestaurant(restaurant.id)}> X </button>
 

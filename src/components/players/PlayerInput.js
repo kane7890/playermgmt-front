@@ -9,18 +9,18 @@ class PlayerInput extends Component {
 
     state = {
 
-      fname:'',
-      lname:'',
+      firstname:'',
+      lastname:'',
       position:'Forward',
       team: ''
 
     }
     handleUserFName = (event) => {
-      this.setState({fname: event.target.value})
+      this.setState({firstname: event.target.value})
     }
 
     handleUserLName = (event) => {
-      this.setState({lname: event.target.value})
+      this.setState({lastname: event.target.value})
     }
     handlePosition= (event) => {
       this.setState({position: event.target.value})
@@ -28,7 +28,7 @@ class PlayerInput extends Component {
 
     handleSubmit = (event) => {
       event.preventDefault();
-      let player = {fname: this.state.fname, lname: this.state.lname, position: this.state.position}
+      let player = {firstname: this.state.firstname, lastname: this.state.lastname, position: this.state.position}
 
       // if (user.username !== "" && user.password !== "")
       //   {
@@ -37,7 +37,7 @@ class PlayerInput extends Component {
       /*
       console.log (user)
       */
-      
+
       this.props.addPlayer(player)
       event=""
       this.setState({name: ''})
@@ -51,13 +51,13 @@ class PlayerInput extends Component {
         <div>
           <label>
             First Name
-            <input id="fname" name="firstname" type="text" onChange={this.handleUserFName} />
+            <input id="firstname" name="firstname" type="text" onChange={this.handleUserFName} />
           </label>
         </div>
         <div>
           <label>
             Last Name
-            <input id="lname" name="lastname" type="text" onChange={this.handleUserLName} />
+            <input id="lastname" name="lastname" type="text" onChange={this.handleUserLName} />
           </label>
         </div>
         <div>

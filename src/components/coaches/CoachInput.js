@@ -8,22 +8,22 @@ class CoachInput extends Component {
 
     state = {
 
-      fname:'',
+      firstname:'',
       lname:'',
 
     }
     handleCoachFName = (event) => {
-      this.setState({fname: event.target.value})
+      this.setState({firstname: event.target.value})
     }
 
     handleCoachLName = (event) => {
-      this.setState({lname: event.target.value})
+      this.setState({lastname: event.target.value})
     }
 
 
     handleSubmit = (event) => {
       event.preventDefault();
-      let coach = {fname: this.state.fname, lname: this.state.lname}
+      let coach = {firstname: this.state.firstname, lastname: this.state.lastname}
 
       // if (user.username !== "" && user.password !== "")
       //   {
@@ -45,13 +45,13 @@ class CoachInput extends Component {
         <div>
           <label>
             First Name
-            <input id="fname" name="firstname" type="text" onChange={this.handleCoachFName} />
+            <input id="firstname" name="firstname" type="text" onChange={this.handleCoachFName} />
           </label>
         </div>
         <div>
           <label>
             Last Name
-            <input id="lname" name="lastname" type="text" onChange={this.handleCoachLName} />
+            <input id="lastname" name="lastname" type="text" onChange={this.handleCoachLName} />
           </label>
         </div>
 

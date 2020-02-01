@@ -11,7 +11,7 @@ class Player extends Component {
       <div>
         Player
         <li>
-          {player.fname} - {player.lname} -- {player.position}
+          {player.firstname} - {player.lastname} -- {player.position}
             {/*
           <button onClick={()=>this.props.deleteRestaurant(restaurant.id)}> X </button>
 
